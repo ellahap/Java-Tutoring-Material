@@ -288,135 +288,163 @@ These operators are used to group conditionals.
 `true || true` → true
 
 `true || false` → true
-false || true → true
-false || false → false
 
-!true → false
-!false → true
+`false || true` → true
 
- ← this is a truth table!
+`false || false` → false
 
-Ex:
-(8 == 8) && (6 < 9) → true
-(12 >= 12) && (5 != 5) → false
-(9 <= 0) && (3 > 2) → false
-(8 * 7 == 2) && (9 * 12  < 3) → false
+`!true` → false
 
-(8 == 8) || (6 < 9) → true
-(12 >= 12) || (5 != 5) → true
-(9 <= 0) || (3 > 2) → true
-(8 * 7 == 2) || (9 * 12  < 3) → false
+`!false` → true
 
+***Example:***
 
+`(8 == 8) && (6 < 9)` → true
 
+`(12 >= 12) && (5 != 5)` → false
 
+`(9 <= 0) && (3 > 2)` → false
 
+`(8 * 7 == 2) && (9 * 12  < 3)` → false
 
+`(8 == 8) || (6 < 9)` → true
 
+`(12 >= 12) || (5 != 5)` → true
 
+`(9 <= 0) || (3 > 2)` → true
 
-
+`(8 * 7 == 2) || (9 * 12  < 3)` → false
 
 
-Arrays:
+
+
+
+
+
+
+
+
+
+
+## Arrays:
+
 A way to store groups of data sequentially.
 
-2 ways to declare an array:
-Ex: For an integer array named ages of size 6 (holding 6 values):
-int[] ages = new int[6];  ←sets default values as placeholders.  For integers, this means 0s.
- 		OR
-int[] ages = {12, 9, 18, 6, 7, 14};
+### 2 ways to declare an array:
 
-Basically: type[] variableName = new type[size];
-		OR
-	type[] variableName = {data};
+***Examples:*** For an integer array named ages of size 6 (holding 6 values):
+
+`int[] ages = new int[6];`  ←sets default values as placeholders.  For integers, this means 0s.
+
+ 		-- OR --
+   
+`int[] ages = {12, 9, 18, 6, 7, 14};`
+
+Basically: `type[] variableName = new type[size];`
+
+		-- OR --
+  
+	`type[] variableName = {data};`
 
 
 *Note: Array size cannot be changed later after declaration
-Array Indexing:
+
+### Array Indexing:
+
 To access the data in an array, you tell the computer what position that data is in.
+
 Arrays are zero-indexed, meaning the first position is 0, then the next is 1, etc.
 
-Ex: Using ages array: 
+***Examples:*** Using previous ages array: 
+
 12 → Position 0
+
 9 → Position 1
+
 18 → Position 2
+
 6 → Position 3
+
 7 → Position 4
+
 14 → Position 5
 
-So to get print out the value 18, I would use:
-System.out.println(ages[2]);
+So to print out the value 18, I would use:
+
+`System.out.println(ages[2]);`
 
 
-Changing Values:
+
+
+### Changing Values:
+
 If I wanted the first value of ages to be 20, I would write
-	ages[0] = 20;
+
+`ages[0] = 20;`
 
 So to load an array value by value:
-	int[] newAges = new int[3]
-	int[0] = 19;
-int[1] = 4;
-int[2] = 8;
 
-A Look Ahead:
-I’m very proud of you guys for learning so well this summer.  Java was also my first big language, which I learned Senior year of high school, and remember being super confusing at the start.  You guys picked it up extremely well, and honestly have a great head start on many people, just by learning some basics.
+```
+int[] newAges = new int[3]
+
+int[0] = 19;
+
+int[1] = 4;
+
+int[2] = 8;
+```
+
+
+
+
+### A Look Ahead:
+
+I’m very proud of you for learning so well this summer.  Java was also my first big language, which I learned in my Senior year of high school, and I remember it being super confusing at the start.
 
 I strongly encourage you to continue learning Java, or other coding programs!
 
 
-I referenced a lot of content to teach you guys from https://www.learncs.online/lessons, which is a free online version of the Freshman year introductory class in Java I took at UIUC. If you would like to continue, I would recommend creating your own account and playing around with the learn, solve, test, debug, and play tabs.  We got to around the 5th lesson in their sequence, and you can continue forward from there or review those we already covered.
-
-
-Classes at LT: (From what I remember they offer!)
-
-Python → I never took, but heard great things! In some ways, Python is easier to pick up than Java, and if you guys got Java, Python should be easy! Python is also great for statistics/data science and Artificial Intelligence and Machine Learning.
-
-Mobile Makers → I took this class sophomore year, and loved it.  It’s coding ios apps in Swift, which is a really cool language that I found myself using just last year in college for a club project!  I honestly wish I took Mobile Makers II and retained more information, because Swift is a really amazing language to make cool stuff with.
-
-AP Computer Science Principles → I never took, but heard it was pretty easy.  It is very introductory, and I think covers more general ideas rather than a lot of technical coding.
-
-AP Computer Science A → Took Senior year, and made me decide to major in CS! Mrs. Carlson is a great teacher, and the content is very much a continuation of all you’ve learned from me in Java.  Was very well taught and had some fun projects to go along with it.  Definitely a bit more work though.
+I referenced a lot of content to teach you guys from [https://www.learncs.online/lessons], which is a free online version of the freshman-year introductory class in Java I took at UIUC. If you  continue, I recommend creating your own account and playing around with the learn, solve, test, debug, and play tabs.  We got to around the 5th lesson in their sequence, and you can continue forward from there or review those we already covered.
 
 
 
-Future Languages I Suggest to Learn:
 
-The great thing about coding, is although the syntax may differ between languages, the core principles are the same.
+## Future Languages I Suggest to Learn:
 
-This means that once you learn a language or two, learning new ones becomes infinitely easier.  So you already have a step ahead!
+The great thing about coding is although the syntax may differ between languages, the core principles are the same.
 
-
-Python:
-Known as a simple language!
-Has lots of libraries and resources out there
-Great for: Data Science / Analytics, Machine Learning / Artificial Intelligence, Scripting (ex: Web scraping, task automation, testing scripts, system administration), Web Development, Automation, Trading, much more
-
-Arduino Programming Language:
-Before I learned Java, I learned to code simple arduinos for projects!
-Super fun and rewarding
-Can make some fun projects from it, by controlling motors, LED lights, etc
-Cool to see physical results of your programming!
-I bought a kit that came with all the needed parts and a book of projects to start, but you can also find projects and resources online and buy your own parts
-
-Swift:
-ios (Apple) app development!
-Very cool to learn for fun projects
-You can actually download what you made onto your phone, which is pretty sick to see
-
-HTML / CSS / JavaScript:
-3 languages I use for web development
-Focus on learning frontend first, then backend (I still don’t know backend tbh)
-HTML → bones, CSS → skin, JavaScript → muscles of the website
-The sites I’ve made used primarily just HTML / CSS, and as it becomes more advanced I would need JavaScript!
-Once you learn how to use these three languages very well, you can move onto popular frameworks like React
+This means that once you learn a language or two, learning new ones become infinitely easier.  So you're already a step ahead!
 
 
-Resources:
+***Python:***
+* Known as a simple language!
+* Has lots of libraries and resources out there
+* Great for: Data Science / Analytics, Machine Learning / Artificial Intelligence, Scripting (ex: Web scraping, task automation, testing scripts, system administration), Web Development, Automation, Trading, much more
 
-I had ChatGPT compile some resources for languages, but you can always Google and research on your own!  YouTube tutorials, ChatGPT, and online forums/sites like Stack Overflow will also be your friend for questions and learning.
+***Arduino Programming Language:***
+* Before I learned Java, I learned to code simple arduinos for projects!
+* Super fun and rewarding
+* Can make some fun projects from it, by controlling motors, LED lights, etc
+* Cool to see physical results of your programming!
+* I bought a kit that came with all the needed parts and a book of projects to start, but you can also find projects and resources online and buy your own parts
 
-1. Python
+***Swift:***
+* ios (Apple) app development!
+* Very cool to learn for fun projects
+* You can actually download what you made onto your phone, which is pretty cool to see!!
+
+***HTML / CSS / JavaScript:***
+* 3 languages I use for web development
+* Focus on learning frontend first, then backend
+* HTML → bones, CSS → skin, JavaScript → muscles of the website
+* Once you learn how to use these three languages very well, you can move on to popular frameworks like React
+
+
+## Resources:
+
+I had ChatGPT compile some resources for languages, but you can always Google and research on your own!  YouTube, ChatGPT, and online forums/sites like Stack Overflow will also be your friend for questions and learning.  YouTube courses can be a great starting point.
+
+***1. Python***
    - Free Resources:
      - [Codecademy: Learn Python](https://www.codecademy.com/learn/learn-python-3)
      - [Coursera: Python for Everybody](https://www.coursera.org/specializations/python)
@@ -428,7 +456,7 @@ I had ChatGPT compile some resources for languages, but you can always Google an
      - [SoloLearn](https://www.sololearn.com/Course/Python/)
      - [HackerRank](https://www.hackerrank.com/domains/tutorials/10-days-of-python)
    
-2. JavaScript
+***2. JavaScript***
    - Free Resources:
      - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
      - [Eloquent JavaScript](https://eloquentjavascript.net/) - Free online book
@@ -439,7 +467,7 @@ I had ChatGPT compile some resources for languages, but you can always Google an
      - [Codecademy: Learn JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
      - [FreeCodeCamp: JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 
-3. Java
+***3. Java***
    - Free Resources:
      - [Codecademy: Learn Java](https://www.codecademy.com/learn/learn-java)
      - [Coursera: Java Programming and Software Engineering Fundamentals](https://www.coursera.org/specializations/java-programming)
@@ -450,7 +478,7 @@ I had ChatGPT compile some resources for languages, but you can always Google an
      - [SoloLearn](https://www.sololearn.com/Course/Java/)
      - [HackerRank](https://www.hackerrank.com/domains/tutorials/10-days-of-java)
 
-4. HTML & CSS
+***4. HTML & CSS***
    - Free Resources:
      - [Codecademy: Learn HTML](https://www.codecademy.com/learn/learn-html)
      - [Codecademy: Learn CSS](https://www.codecademy.com/learn/learn-css)
@@ -461,7 +489,7 @@ I had ChatGPT compile some resources for languages, but you can always Google an
    - Interactive Platforms:
      - [FreeCodeCamp: Responsive Web Design Certification](https://www.freecodecamp.org/learn/responsive-web-design/)
 
-5. Swift (for iOS Development)
+***5. Swift (for iOS Development)***
    - Free Resources:
      - [Codecademy: Learn Swift](https://www.codecademy.com/learn/learn-swift)
      - [Apple's Swift Documentation](https://developer.apple.com/swift/resources/)
@@ -472,7 +500,7 @@ I had ChatGPT compile some resources for languages, but you can always Google an
      - [HackerRank](https://www.hackerrank.com/domains/tutorials/10-days-of-swift)
      - [SoloLearn](https://www.sololearn.com/Course/Swift/)
 
-General Learning Platforms
+***General Learning Platforms***
 - [Coursera](https://www.coursera.org/): Offers courses from universities and organizations on various programming languages.
 - [edX](https://www.edx.org/learn/computer-programming): Provides courses from top institutions on different programming languages.
 - [Udemy](https://www.udemy.com/): Features a wide range of paid courses often available at discounted prices.
