@@ -1,4 +1,4 @@
-This summer I taught local middle and high school students introductory java lessons.  I created the lesson plans, material, and activities myself, based on past java learning experiences in "AP Computer Science A" in high school, "Introduction to Computer Science" in college[^1] and my own personal projects and interests.  Here is everything I taught them.
+Last summer I taught local middle and high school students introductory java lessons.  I created the lesson plans, material, and activities myself, based on past java learning experiences in "AP Computer Science A" in high school, "Introduction to Computer Science" in college[^1] and my own personal projects and interests.  Here is everything I taught them.
 
 [^1]: A big help was [learncs.online](https://learncs.online), which allows public access to our freshman java lessons, meaning I could continually reference the lessons while no longer being enrolled in the class.
 
@@ -442,7 +442,7 @@ This means that once you learn a language or two, learning new ones become infin
 
 ## Resources:
 
-I had ChatGPT compile some resources for languages, but you can always Google and research on your own!  YouTube, ChatGPT, and online forums/sites like Stack Overflow will also be your friend for questions and learning.  YouTube courses can be a great starting point.
+You can always Google and research on your own!  YouTube, ChatGPT, and online forums/sites like Stack Overflow will also be your friend for questions and learning.  YouTube courses can be a great starting point.
 
 ***1. Python***
    - Free Resources:
